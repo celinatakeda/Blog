@@ -1,0 +1,24 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "nome": "Celina",
+      "mensagem": "Seja bem vindo ao meu blog pessoal"
+    },
+    {
+      "id": 2,
+      "nome": "Carina",
+      "mensagem": "Este blog é muito legal"
+    },
+    {
+      "id": 3,
+      "nome": "Carlos",
+      "mensagem": "Esta é minha primeira postagem"
+    },
+    {
+      "id": "4",
+      "nome": "Gabriel",
+      "mensagem": "Esta é uma nova postagem"
+    }
+  ]
+}
