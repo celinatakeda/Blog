@@ -9,7 +9,7 @@ import { PostService } from '../service/post.service';
 })
 export class FeedComponent implements OnInit {
 
-  listPost: Post[] | any;
+  listPost: Post[] | any ;
   post: Post = new Post;
 
 
