@@ -1,4 +1,6 @@
+import { Post } from './../model/Post';
 import { Component, OnInit } from '@angular/core';
+import { PostService } from '../service/post.service';
 
 @Component({
   selector: 'app-feed',
@@ -7,9 +9,27 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FeedComponent implements OnInit {
 
-  constructor() { }
+  listPost: Post[] | any;
+  post: Post = new Post;
+
+
+  constructor(private postService: PostService) { }
 
   ngOnInit(): void {
+    this.findPosts()
   }
 
+  
+  findPosts(){
+    this.postService.getPosts().subscribe((data: Post[] | any )=>{
+      this.listPost = data;
+    })
+  }
+
+  cadastrarMensagem(){
+    this.postService.postMensagem(this.post).subscribe((data: Post | any)=>{
+      this.post = data
+      location.assign('/feed')
+    })
+  }
 }
