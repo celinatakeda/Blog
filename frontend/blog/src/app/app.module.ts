@@ -11,6 +11,8 @@ import { ContatoComponent } from './contato/contato.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { MensagemComponent } from './mensagem/mensagem.component';
+
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { FormsModule } from '@angular/forms';
     NavbarComponent,
     FooterComponent,
     FeedComponent,
-    ContatoComponent
+    ContatoComponent,
+    MensagemComponent,
+    
   ],
   imports: [
     BrowserModule,

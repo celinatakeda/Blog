@@ -3,13 +3,16 @@ import { FeedComponent } from './feed/feed.component';
 import { HomeComponent } from './home/home.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { MensagemComponent } from './mensagem/mensagem.component';
 
 const routes: Routes = [
   {
     path: '', redirectTo: 'home', pathMatch: 'full'},
     {path: 'home', component: HomeComponent},
     {path: 'feed', component: FeedComponent},
-    {path: 'contato', component: ContatoComponent}
+    {path: 'contato', component: ContatoComponent},
+    {path: 'mensagem', component: MensagemComponent},
+
 ];
 
 @NgModule({
