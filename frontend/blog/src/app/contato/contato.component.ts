@@ -13,6 +13,7 @@ export class ContatoComponent implements OnInit {
   }
 
   MensagemEnviada(){
+    
     console.log ("Mensagem enviada com sucesso")
   }
 
