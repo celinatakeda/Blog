@@ -9,19 +9,17 @@ import { PostService } from '../service/post.service';
 })
 export class FeedComponent implements OnInit {
 
-  listPost: Post[] | any ;
+  listPost!: Post[];
   post: Post = new Post;
-
 
   constructor(private postService: PostService) { }
 
   ngOnInit(): void {
     this.findPosts()
-  }
-
+   }
   
   findPosts(){
-    this.postService.getPosts().subscribe((data: Post[] | any )=>{
+    this.postService.getPosts().subscribe((data: Post[] | any)=>{
       this.listPost = data;
     })
   }
