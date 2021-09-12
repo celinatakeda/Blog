@@ -4,7 +4,7 @@
   "description": "Projeto blog desenvolvido com Java e Angular",
   "main": "index.js",
   "scripts": {
-    "start": "json-server --watch banco.json --port 3000ng "
+    "start": "json-server --watch banco.json --port 3000ng"
   },
   "repository": {
     "type": "git",
